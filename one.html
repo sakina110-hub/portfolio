@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sakina Abedi | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #f8f8f8;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 0;
+      background-color: #1e1e2f;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #00d1b2;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      color: #f8f8f8;
+      text-decoration: none;
+      padding: 6px 10px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      background-color: #00d1b2;
+      color: #121212;
+      border-radius: 5px;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 90vh;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+      justify-content: space-between;
+      text-align: left;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-text h1 span {
+      color: #ffc107;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      color: #cfcfcf;
+    }
+
+    .intro {
+      font-size: 1rem;
+      color: #cccccc;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #ffc107;
+      color: #121212;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #e0a800;
+    }
+
+    .hero-image img {
+      width: 300px;
+      border-radius: 10px;
+      border: 3px solid #ffc107;
+      object-fit: cover;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1e1e2f;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.95rem;
+      color: #aaaaaa;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .nav-links a {
+        width: 100%;
+        padding: 10px;
+      }
+
+      .hero-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero-image img {
+        width: 200px;
+        margin-top: 20px;
+      }
+
+      .intro {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar container">
+      <div class="logo">Sakina Abedi</div>
+      <ul class="nav-links">
+        <li><a href="one.html" class="active">Home</a></li>
+        <li><a href="ABOUTT.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="CONTACTT.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1><strong>Hi, I'm <span>Sakina Abedi</span></strong></h1>
+        <p class="subtitle">Web Developer · Data Analytics Learner · Graphic Designer · Video Editor</p>
+        <p class="intro">
+          B.Tech graduate with practical experience in web development, video editing, and graphic design.
+          Currently upskilling in data analytics, seeking to contribute my diverse technical and creative
+          abilities to a growth-focused organization.
+        </p>
+        <a href="sakina_s_resume.pdf" class="btn" download>Download Resume</a>
+      </div>
+      <div class="hero-image">
+        <img src="img.folder/vecteezy_software-engineer-png-graphic-clipart-design_20962989.png" alt="Sakina Abedi" />
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; www.sakina's Portfolio.com | All rights reserved</p>
+  </footer>
+
+</body>
+</html>

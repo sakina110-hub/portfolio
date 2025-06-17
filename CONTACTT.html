@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Sakina Abedi</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* === NAVBAR === */
+.navbar {
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00bfa6;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #ffc107;
+}
+
+/* === CONTACT SECTION === */
+.contact-section {
+  padding: 60px 20px;
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.contact-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact-info {
+  background-color: #1e1e2f;
+  padding: 25px;
+  border-radius: 8px;
+  border-left: 4px solid #00d1b2;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.contact-info strong {
+  color: #ffc107;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #1c1c1c;
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- ✅ IDENTICAL NAVIGATION BAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Sakina Abedi</div>
+      <ul class="nav-links">
+        <li><a href="one.html">Home</a></li>
+        <li><a href="ABOUTT.html">About</a></li>
+        <li><a href="PROJECTSS.html">Projects</a></li>
+        <li><a href="CONTACTT.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ✅ Contact Section -->
+  <section class="contact-section">
+    <h1 class="section-title"><span>Contact Me</span></h1>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <p><strong>📞 Mobile:</strong> 9112754110</p>
+        <p><strong>📧 Email:</strong> abedisakina110@gmail.com</p>
+        <p><strong>📍 Address:</strong> City Chowk, Deodi Bazar, Zaidi Lane, Aurangabad - 431001, Maharashtra</p>
+      </div>
+
+      <!-- ✅ Embedded Google Map -->
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.3289271062486!2d75.32014761436882!3d19.876165986629447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdba3dfb56c566b%3A0x4cd0b5c15d118cdc!2sCity%20Chowk%2C%20Aurangabad%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1626791885784!5m2!1sen!2sin"
+          width="100%"
+          height="300"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Footer -->
+  <footer>
+    <p>&copy; www.sakina's Portfolio.com | All rights reserved</p>
+  </footer>
+
+</body>
+</html>

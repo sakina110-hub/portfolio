@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Sakina Abedi</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* === NAVIGATION BAR === */
+.navbar {
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00bfa6;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #ffc107;
+}
+
+/* === SECTION TITLE === */
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 40px 0;
+  color: #ffc107;
+}
+
+/* === PROJECTS === */
+.projects-section {
+  padding: 60px 20px;
+  background-color: #121212;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.project-box {
+  background-color: #1e1e2f;
+  padding: 25px;
+  border-radius: 8px;
+  border-left: 4px solid #00d1b2;
+}
+
+.project-box h2 {
+  color: #ffc107;
+  margin-bottom: 15px;
+}
+
+.project-box ul {
+  padding-left: 20px;
+}
+
+.project-box li {
+  color: #dddddd;
+  line-height: 1.6;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #1c1c1c;
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .projects-section {
+    padding: 40px 15px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Navigation Bar (same as Home) -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Sakina Abedi</div>
+      <ul class="nav-links">
+        <li><a href="one.html">Home</a></li>
+        <li><a href="ABOUTT.html">About</a></li>
+        <li><a href="PROJECTSS.html" class="active">Projects</a></li>
+        <li><a href="CONTACTT.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ✅ Projects Section -->
+  <section class="projects-section">
+    <h1 class="section-title"><span>Projects</span></h1>
+
+    <div class="projects-container">
+
+      <div class="project-box">
+        <h2>1. Core Food Delivery Website (Frontend Development)</h2>
+        <ul>
+          <li>Designed and developed the frontend using HTML and CSS.</li>
+          <li>Ensured a responsive and user-friendly interface for seamless user experience.</li>
+        </ul>
+      </div>
+
+      <div class="project-box">
+        <h2>2. Data Analysis on E-commerce Data</h2>
+        <ul>
+          <li>Collected data from Kaggle.</li>
+          <li>Conducted data cleaning using MS Excel and Python.</li>
+          <li>Performed data visualization to compare budget performance using Power BI.</li>
+        </ul>
+      </div>
+
+      <div class="project-box">
+        <h2>3. Web-Based Dashboard for Data Visualization</h2>
+        <ul>
+          <li>Developed a responsive dashboard.</li>
+          <li>Implemented interactive charts using Power BI.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ✅ Footer -->
+  <footer>
+    <p>&copy; www.sakina's Portfolio.com | All rights reserved</p>
+  </footer>
+
+</body>
+</html>

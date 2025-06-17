@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Sakina Abedi</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* === GENERAL === */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.container {
+  padding: 0 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* === NAVIGATION BAR === */
+.navbar {
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00bfa6;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover,
+.navbar .nav-links .active {
+  color: #ffc107;
+}
+
+/* === ABOUT SECTION === */
+.about-section {
+  padding: 60px 20px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ffc107;
+}
+
+.about-grid {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.about-box {
+  flex: 1;
+  background-color: #1e1e2f;
+  padding: 25px;
+  border-radius: 8px;
+  border-left: 4px solid #00d1b2;
+}
+
+.about-box h2 {
+  color: #ffc107;
+  margin-bottom: 15px;
+}
+
+.about-box p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.skills ul {
+  padding-left: 20px;
+}
+
+.skills li {
+  margin-bottom: 8px;
+  color: #dddddd;
+}
+
+/* === EXPERIENCE === */
+.experience {
+  background-color: #1e1e2f;
+  padding: 30px;
+  border-radius: 8px;
+  border-left: 4px solid #00d1b2;
+}
+
+.experience h2 {
+  color: #ffc107;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.exp-item {
+  margin-bottom: 30px;
+}
+
+.exp-item h3 {
+  color: #00d1b2;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.exp-item ul {
+  padding-left: 20px;
+}
+
+.exp-item li {
+  color: #cccccc;
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #1c1c1c;
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .about-grid {
+    flex-direction: column;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .about-box,
+  .experience {
+    padding: 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Sakina Abedi</div>
+      <ul class="nav-links">
+        <li><a href="one.html">Home</a></li>
+        <li><a href="ABOUTT.html" class="active">About</a></li>
+        <li><a href="PROJECTSS.html">Projects</a></li>
+        <li><a href="CONTACTT.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <h1 class="section-title"><span>About Me</span></h1>
+    
+    <div class="about-grid">
+      <div class="about-box personal-info">
+        <h2>Personal Information</h2>
+        <p><strong>Name:</strong> Syeda Sakina Abedi</p>
+        <p><strong>Domain:</strong> Web Developer and Graphic Designer</p>
+        <p><strong>Birth Date:</strong> 27-08-2003</p>
+        <p><strong>Phone:</strong> 9112754110</p>
+        <p><strong>City:</strong> Aurangabad, Maharashtra</p>
+        <p><strong>Age:</strong> 22</p>
+        <p><strong>Email:</strong> abedisakina110@gmail.com</p>
+        <p><strong>Degree:</strong> B.Tech</p>
+      </div>
+
+      <div class="about-box skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>WordPress</li>
+          <li>Photoshop</li>
+          <li>Microsoft Excel & PowerPoint</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="experience">
+      <h2>Experience</h2>
+
+      <div class="exp-item">
+        <h3>Co-Lead, Technical Club | PES College of Engineering</h3>
+        <ul>
+          <li>Led planning and execution of technical workshops and events for 100+ students.</li>
+          <li>Coordinated with faculty and speakers on topics like web dev, AI/ML.</li>
+          <li>Promoted events through social media, increasing participation by 40%.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <h3>Team Leader, FORCE - Forum of Computer Engineers</h3>
+        <ul>
+          <li>Directed a team to organize competitions, peer-learning sessions, and symposiums.</li>
+          <li>Managed event logistics and coordinated technical teams.</li>
+          <li>Fostered collaboration on programming and emerging tech.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <h3>Event Anchor & Host | PES College Events</h3>
+        <ul>
+          <li>Anchored over 10 events including hackathons and cultural programs.</li>
+          <li>Skilled in public speaking, scriptwriting, and time management.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <h3>Participant | Technical Programs & Hackathons</h3>
+        <ul>
+          <li>Active in coding contests and hackathons at intra/inter college levels.</li>
+          <li>Attended workshops on Data Science, Cloud, Cybersecurity, and Full Stack Dev.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; www.sakina's Portfolio.com | All rights reserved</p>
+  </footer>
+
+</body>
+</html>
